@@ -1,0 +1,360 @@
+/* =========================
+   DOCUMENTATION PAGE
+========================= */
+
+.documentation-page {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.documentation-header {
+  margin-bottom: 25px;
+}
+
+.documentation-header h1 {
+  margin: 0;
+  color: #102653;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.documentation-header p {
+  margin: 7px 0 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.documentation-section {
+  margin-bottom: 22px;
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #dbe5ef;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.045);
+}
+
+.documentation-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 17px;
+}
+
+.documentation-section-heading h2 {
+  margin: 0;
+  color: #172554;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.documentation-section-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.overview-copy {
+  max-width: 850px;
+  margin: 0;
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.overview-use-cases {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 19px;
+}
+
+.overview-use-cases span {
+  padding: 6px 11px;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.documentation-block {
+  margin-bottom: 25px;
+}
+
+.documentation-block > .documentation-section-heading {
+  margin-bottom: 16px;
+}
+
+.documentation-card-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.documentation-card-grid.three-columns {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.documentation-card-grid.two-columns {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.documentation-card {
+  min-width: 0;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #dbe5ef;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.045);
+}
+
+.documentation-card h3 {
+  margin: 0 0 13px;
+  color: #172554;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.documentation-card ul,
+.documentation-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.documentation-card li,
+.documentation-list li {
+  position: relative;
+  padding-left: 17px;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.documentation-card li::before,
+.documentation-list li::before {
+  position: absolute;
+  top: 0.58em;
+  left: 1px;
+  width: 6px;
+  height: 6px;
+  background: #3b82f6;
+  border-radius: 50%;
+  content: "";
+}
+
+.use-case-objective {
+  margin: 17px 0 0;
+  padding: 11px 12px;
+  color: #1e40af;
+  background: #f3f8ff;
+  border-left: 3px solid #60a5fa;
+  border-radius: 0 6px 6px 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.workflow-section {
+  overflow: hidden;
+}
+
+.workflow-steps {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.workflow-step-item {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  min-height: 106px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  background: #f8fbff;
+  border: 1px solid #dbeafe;
+  border-radius: 9px;
+}
+
+.workflow-step-item:not(:last-child)::after {
+  position: absolute;
+  top: 50%;
+  right: -13px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #5b83bb;
+  border-right: 2px solid #5b83bb;
+  content: "";
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.workflow-step-number {
+  color: #3b82f6;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.workflow-step-label {
+  color: #172554;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.workflow-notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 21px;
+  padding-top: 18px;
+  border-top: 1px solid #e8eef5;
+}
+
+.workflow-notes p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.workflow-notes strong {
+  color: #1e40af;
+}
+
+.technology-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.technology-item {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+  padding-left: 13px;
+  border-left: 2px solid #bfdbfe;
+}
+
+.technology-name {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.technology-value {
+  max-width: 100%;
+  padding: 6px 9px;
+  color: #1e40af;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.two-column-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 30px;
+}
+
+.scope-card h3 {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e8eef5;
+}
+
+.ai-scope-card p {
+  margin: 0 0 13px;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ai-scope-card .scope-boundary {
+  margin: 0;
+  padding: 12px;
+  color: #1e40af;
+  background: #f3f8ff;
+  border-left: 3px solid #60a5fa;
+  border-radius: 0 6px 6px 0;
+}
+
+@media (max-width: 1100px) {
+  .documentation-card-grid.three-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .workflow-steps {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .workflow-step-item {
+    min-height: 68px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+  }
+
+  .workflow-step-item:not(:last-child)::after {
+    top: auto;
+    right: auto;
+    bottom: -10px;
+    left: 20px;
+    transform: rotate(135deg);
+  }
+
+  .workflow-notes {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .technology-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .documentation-header h1 {
+    font-size: 25px;
+  }
+
+  .documentation-section {
+    padding: 21px;
+  }
+
+  .documentation-card-grid.three-columns,
+  .documentation-card-grid.two-columns,
+  .technology-grid,
+  .two-column-list {
+    grid-template-columns: 1fr;
+  }
+
+  .documentation-card {
+    padding: 20px;
+  }
+}

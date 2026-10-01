@@ -73,3 +73,8 @@ class CampaignDecisionAPIView(APIView):
             "reply_text": "",
             "conversation_context": conversation_context,
         })
+class CampaignListAPIView(APIView):
+    def get(self, request):
+        campaigns = Campaign.objects.all().order_by("-created_at")
+        serializer = CampaignSerializer(campaigns, many=True)
+        return Response(serializer.data)
