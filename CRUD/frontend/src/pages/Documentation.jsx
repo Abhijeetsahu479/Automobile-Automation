@@ -32,7 +32,8 @@ const applicationPages = [
     points: [
       "List customers.",
       "Edit customer information.",
-      "Date of service is not editable.",
+      "Edit Date of Service from the Edit Customer form.",
+      "Customer updates send last_service_date, which CustomerSerializer accepts.",
       "Start a campaign.",
     ],
   },

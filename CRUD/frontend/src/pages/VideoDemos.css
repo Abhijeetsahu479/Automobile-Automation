@@ -176,6 +176,14 @@
   line-height: 1.55;
 }
 
+.video-demo-content .video-demo-status {
+  min-height: 0;
+  margin: -8px 0 12px;
+  color: #46617f;
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .watch-demo-button {
   display: inline-flex;
   align-items: center;
