@@ -47,9 +47,7 @@ class CustomerAPITestCase(APITestCase):
         self.assertEqual(self.customer.name, "Updated Customer")
         self.assertEqual(self.customer.phone, "9999999999")
 
-    def test_last_service_date_is_read_only(self):
-        original_date = self.customer.last_service_date
-
+    def test_last_service_date_can_be_updated(self):
         response = self.client.patch(
             f"/api/customers/{self.customer.id}/",
             {
@@ -64,7 +62,7 @@ class CustomerAPITestCase(APITestCase):
 
         self.assertEqual(
             self.customer.last_service_date,
-            original_date
+            date(2026, 12, 30)
         )
 
     def test_patch_non_existing_customer(self):

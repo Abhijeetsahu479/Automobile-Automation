@@ -24,6 +24,7 @@ function Customers() {
     company_name: "",
     service_type: "",
     vehicle_number: "",
+    last_service_date: "",
   });
 
   // Campaign state per customer
@@ -68,6 +69,7 @@ function Customers() {
       company_name: customer.company_name || "",
       service_type: customer.service_type || "",
       vehicle_number: customer.vehicle_number || "",
+      last_service_date: customer.last_service_date || "",
     });
   };
 
@@ -501,6 +503,17 @@ function Customers() {
                         <input
                           name="service_type"
                           value={formData.service_type}
+                          onChange={handleChange}
+                        />
+                      </div>
+
+                      <div>
+                        <label>Date of Service</label>
+
+                        <input
+                          type="date"
+                          name="last_service_date"
+                          value={formData.last_service_date}
                           onChange={handleChange}
                         />
                       </div>
